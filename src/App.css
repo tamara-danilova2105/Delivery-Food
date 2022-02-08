@@ -166,7 +166,7 @@ body {
   }
 
   .btnFood {
-    margin: 5px 30px;
+    margin: 5px 35px;
     font-size: 18px;
   }
 
@@ -192,8 +192,8 @@ body {
 
   .btnBasket {
     width: 100px;
-    height: 20px;
-    font-size: 15px;
+    height: 25px;
+    font-size: 20px;
     margin-left: 45px;
   }
 
