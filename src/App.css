@@ -228,4 +228,8 @@ body {
     font-size: 20px;
     height: 60px;
   }
+
+  .margin {
+    margin-top: 18px;
+  }
 }
