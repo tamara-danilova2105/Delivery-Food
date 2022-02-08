@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F5F5F5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.delivery {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bestpizza {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #DD4A48;
+  text-shadow: 2px 1px black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 40px;
+}
+
+.product-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.namefood {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+}
+
+.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  height: 70px;
+  padding: 10px;
+}
+
+.price {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btnBasket {
+    width: 150px;
+    height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    background-color: #119489ec;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.margin {
+  margin-top: 23px;
+}
+
+.btn-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btnFood {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px;
+  background-color: #F5F5F5;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.delivery-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.delivery-block {
+  width: 400px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.red {
+  color: #DD4A48;
+  text-shadow: 2px 1px black;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+/* Адаптация */
+
+@media all and (max-width: 800px) {
+  .btnBasket {
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .product {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .imageFood {
+    width: 300px;
+  }
+
+  .description {
+    height: 90px;
+  }
+
+  .imageZone {
+    width: 200px;
+  }
+
+  .red {
+    text-shadow: 2px 1px black;
+    font-size: 25px;
+  }
+
+  .delivery-block {
+    width: 350px;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btnFood {
+    margin: 5px 30px;
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .bestpizza {
+    font-size: 30px;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .delivery {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .btnBasket {
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    margin-left: 45px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .delivery-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .red {
+    text-align: center;
+  }
+
+  .imageZone {
+    width: 100%;
+  }
+
+  .delivery-block {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .bannerHomePage {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 15px;
+    height: 40px;
   }
 }
