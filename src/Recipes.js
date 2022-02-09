@@ -1,17 +1,25 @@
+import { useState } from 'react';
 import { dataRecipes } from './dataRecipes'
 import icontime from './photo/icon-time.png'
 import iconplate from './photo/icon-plate.png'
 
 
 function Recipes(){
+    const [showText, setShowText] = useState(false)
+
+    const showTextClick = (item) => {
+        item.showMore = !item.showMore
+        setShowText(!showText)
+    }
+
     return(
         <div className='container-recipes'>
             {dataRecipes.map(item => {
-                const {id, photo, name, time, quantity, ingredients, description} = item
+                const {id, photo, name, time, quantity, ingredients, description, showMore} = item
                 return(
                     <div key={id} className='recipes-block'>
-                        <div className='recipes'>
-                            <h2 className='nameRecipes'>{name}</h2>
+                        <div className='recipes position'>
+                            <h2 className='nameRecipes textcenter'>{name}</h2>
                             <img className='imageFood' src={photo} alt={name} width='400px'/>
                         </div>
                         <div className='recipes about'>
@@ -24,7 +32,8 @@ function Recipes(){
                             <p className='bolder'>Количество порций - {quantity} шт.</p>
                             </span>
                             <p className='ingredients'>{ingredients}</p>
-                            <p className=''>{description}</p>
+                            <p align="justify">{showMore ? description : description.substring(0, 170) + ' ...'}
+                            <button className='shomMorebtn' onClick={() => showTextClick(item)}>{ showMore ? 'скрыть' : 'показать'}</button></p>
                         </div>
                     </div>
                 )

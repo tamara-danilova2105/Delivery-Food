@@ -140,7 +140,7 @@ body {
 }
 
 .about {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .nameRecipes {
@@ -167,6 +167,16 @@ span {
   background-color: #119489ec;
   color: #fff;
   padding: 20px;
+}
+
+.shomMorebtn {
+  background: #F5F5F5;
+  border: none;
+  color: #DD4A48;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Адаптация */
@@ -210,6 +220,15 @@ span {
     width: 80%;
   }
 
+  .position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    margin-top: 20px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -285,6 +304,10 @@ span {
 
   .margin {
     margin-top: 18px;
+  }
+
+  .recipes {
+    width: 85%;
   }
 
 }

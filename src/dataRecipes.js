@@ -5,6 +5,7 @@ import tiramisu from './photo/tiramisu.jfif'
 export const dataRecipes = [
     {
         id: 1,
+        showMore: false,
         name: 'Минестроне',
         time: '1 час 30 минут',
         quantity: 6,
@@ -15,6 +16,7 @@ export const dataRecipes = [
 
     {
         id: 2,
+        showMore: false,
         name: 'Лазанья',
         time: '2 часа',
         quantity: 8,
@@ -25,6 +27,7 @@ export const dataRecipes = [
 
     {
         id: 3,
+        showMore: false,
         name: 'Тирамису',
         time: '3 часа 20 минут',
         quantity: 8,
