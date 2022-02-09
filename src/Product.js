@@ -8,7 +8,7 @@ function Product({product}) {
                         <div className='product-info'>
                             <img className="imageFood" src={photo} alt={name} width='400px'/>
                             <h2 className='namefood'>{name}</h2>
-                            <p className='description'>{description}</p>
+                            <p align="justify" className='description'>{description}</p>
                         </div>
                         <div className='price-info'>
                             <p className='price'>{price} ₽</p>

@@ -122,6 +122,11 @@ body {
 
 /* РЕЦЕПТЫ */
 
+.header {
+  color: #DD4A48;
+  text-shadow: 1px 1px black;
+}
+
 .container-recipes {
   display: flex;
   flex-direction: column;
@@ -229,6 +234,10 @@ span {
   .about {
     margin-top: 20px;
   }
+
+  .header {
+    font-size: 25px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -240,7 +249,7 @@ span {
 
   .btnFood {
     margin: 5px 35px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .navbar {
@@ -299,7 +308,8 @@ span {
 
   .description {
     font-size: 20px;
-    height: 60px;
+    height: 80px;
+    margin: 0;
   }
 
   .margin {
@@ -308,6 +318,10 @@ span {
 
   .recipes {
     width: 85%;
+  }
+
+  .imageFood {
+    width: 350px;
   }
 
 }

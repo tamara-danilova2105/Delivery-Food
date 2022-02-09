@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { dataRecipes } from './dataRecipes'
 import icontime from './photo/icon-time.png'
 import iconplate from './photo/icon-plate.png'
+import recipes from './photo/recipes.jfif'
 
 
 function Recipes(){
@@ -13,13 +14,18 @@ function Recipes(){
     }
 
     return(
+    <div>
+        <div className='bannerHomePage'>
+            <h1 align="center"className='header margin'>РЕЦЕПТЫ ПОПУЛЯРНЫХ ИТАЛЬЯНСКИХ БЛЮД</h1>
+            <img src={recipes} width='100%' alt='BEST PIZZA'/>
+        </div>
         <div className='container-recipes'>
             {dataRecipes.map(item => {
                 const {id, photo, name, time, quantity, ingredients, description, showMore} = item
                 return(
                     <div key={id} className='recipes-block'>
                         <div className='recipes position'>
-                            <h2 className='nameRecipes textcenter'>{name}</h2>
+                            <h2 className='nameRecipes'>{name}</h2>
                             <img className='imageFood' src={photo} alt={name} width='400px'/>
                         </div>
                         <div className='recipes about'>
@@ -39,6 +45,7 @@ function Recipes(){
                 )
             })}
         </div>
+    </div>
     )
 }
 
