@@ -12,7 +12,7 @@ function Product({product}) {
                         </div>
                         <div className='price-info'>
                             <p className='price'>{price} ₽</p>
-                            <button className='btnBasket margin'>в корзину +</button>
+                            <button className='btnBasket margin'>в корзину</button>
                         </div>
                     </div>
                 )

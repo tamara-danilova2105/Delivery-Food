@@ -120,6 +120,54 @@ body {
   font-weight: bold;
 }
 
+/* РЕЦЕПТЫ */
+
+.container-recipes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.recipes-block {
+  display: flex;
+  justify-content: center;
+}
+
+.recipes {
+  width: 35%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.nameRecipes {
+  font-size: 30px;
+  font-weight: bold;
+  color: #DD4A48;
+  text-shadow: 2px 1px black;
+}
+
+.bolder {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #119489ec;
+  text-shadow: 1px 1px black;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.ingredients {
+  background-color: #119489ec;
+  color: #fff;
+  padding: 20px;
+}
 
 /* Адаптация */
 
@@ -152,8 +200,14 @@ body {
     font-size: 25px;
   }
 
-  .delivery-block {
-    width: 350px;
+  .recipes-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipes {
+    width: 80%;
   }
 
 }
@@ -191,7 +245,7 @@ body {
   }
 
   .btnBasket {
-    width: 120px;
+    width: 100px;
     height: 30px;
     font-size: 20px;
     margin-left: 40px;
@@ -232,4 +286,5 @@ body {
   .margin {
     margin-top: 18px;
   }
+
 }
