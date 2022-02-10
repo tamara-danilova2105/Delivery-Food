@@ -16,7 +16,7 @@ function Recipes(){
     return(
     <div>
         <div className='bannerHomePage'>
-            <h1 align="center"className='header margin'>РЕЦЕПТЫ ПОПУЛЯРНЫХ ИТАЛЬЯНСКИХ БЛЮД</h1>
+            <h1 align="center"className='header margin'>РЕЦЕПТЫ ИТАЛЬЯНСКОЙ КУХНИ</h1>
             <img src={recipes} width='100%' alt='BEST PIZZA'/>
         </div>
         <div className='container-recipes'>

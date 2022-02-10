@@ -125,6 +125,7 @@ body {
 .header {
   color: #DD4A48;
   text-shadow: 1px 1px black;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container-recipes {
@@ -248,8 +249,9 @@ span {
   }
 
   .btnFood {
-    margin: 5px 35px;
+    width: 120px;
     font-size: 20px;
+    margin: 5px;
   }
 
   .navbar {
@@ -298,8 +300,10 @@ span {
   }
 
   .delivery-block {
+    width: 350px;
     font-size: 20px;
     padding: 10px;
+    text-align: justify;
   }
 
   .bannerHomePage {
