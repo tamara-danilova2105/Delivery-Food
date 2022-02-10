@@ -17,7 +17,7 @@ function HomePage() {
     return(
         <div>
             <div className='bannerHomePage'>
-                <img src={slides_one} width='100%' alt='BEST PIZZA'/>
+                <img className='margin' src={slides_one} width='100%' alt='BEST PIZZA'/>
             </div>
 
             <div>
