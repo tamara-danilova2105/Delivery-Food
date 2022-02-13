@@ -195,6 +195,7 @@ span {
 
 .discounts-block {
   display: flex;
+  margin: 30px;
 }
 
 .discounts-text {
@@ -380,6 +381,10 @@ span {
 
   .discounts-par {
     height: 100px;
+  }
+
+  .discounts-block {
+    margin: -10px;
   }
 
 }

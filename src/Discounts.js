@@ -39,7 +39,7 @@ function Discounts(){
                 <button className='btnBasket left' onClick={next}>Вперед</button>
             </div>
 
-            <div className='discounts-block margin'>
+            <div className='discounts-block'>
                 <img align="center" className='imageFood' src={image} width='350px' height='480px' alt='наши акции'/>
                 <div className='discounts-text'>
                     <h2 className='discounts-header'>{header}</h2>
