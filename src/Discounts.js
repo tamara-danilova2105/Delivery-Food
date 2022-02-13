@@ -16,6 +16,8 @@ function Discounts(){
             return discount
         }))
     }
+
+    
     
     const next = () => {
         setDiscount((discount => {

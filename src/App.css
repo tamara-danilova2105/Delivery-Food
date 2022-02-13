@@ -216,6 +216,7 @@ span {
 .discounts-par {
   font-size: 20px;
   margin-top: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -364,7 +365,7 @@ span {
 
   .discounts-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .discounts-text {
@@ -375,6 +376,10 @@ span {
   .discounts-header {
     font-size: 28px;
     text-align: center;
+  }
+
+  .discounts-par {
+    height: 100px;
   }
 
 }
