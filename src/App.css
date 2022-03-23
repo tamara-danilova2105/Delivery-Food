@@ -475,13 +475,13 @@ span {
   }
 
   .cart-name {
-    width: 110px;
+    width: 160px;
     margin-left: 10px;
     font-size: 15px;
   }
   
   .cart-count {
-    width: 90px;
+    width: 95px;
     font-size: 15px;
   }
   
@@ -497,7 +497,6 @@ span {
   }
 
   .icon-product {
-    width: 30px;
-    height: 30px;
+    display: none;
   }
 }
