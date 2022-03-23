@@ -1,10 +1,10 @@
-function Button({filtredFood}) {
+function Button({chosenFood}) {
     return(
         <div className="btn-container">
-            <button className="btnFood" onClick={() => filtredFood('pizza')}>Пицца</button>
-            <button className="btnFood" onClick={() => filtredFood('snacks')}>Закуски</button>
-            <button className="btnFood" onClick={() => filtredFood('desserts')}>Десерты</button>
-            <button className="btnFood" onClick={() => filtredFood('drinks')}>Напитки</button>
+            <button className="btnFood" onClick={() => chosenFood('pizza')}>Пицца</button>
+            <button className="btnFood" onClick={() => chosenFood('snacks')}>Закуски</button>
+            <button className="btnFood" onClick={() => chosenFood('desserts')}>Десерты</button>
+            <button className="btnFood" onClick={() => chosenFood('drinks')}>Напитки</button>
         </div>
     )
 }

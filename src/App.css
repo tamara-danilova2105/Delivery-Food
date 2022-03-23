@@ -80,6 +80,8 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .margin {
@@ -220,6 +222,68 @@ span {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* КОРЗИНА */
+
+.cart-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: start;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 5%;
+}
+
+.cart-name {
+  width: 250px;
+  text-align: start;
+  margin-left: 50px;
+}
+
+.cart-count {
+  width: 180px;
+  text-align: start;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.add-remove {
+  width: 30px;
+  height: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: #119489ec;
+  cursor: pointer;
+  border: none;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-radius: 5px;
+}
+
+.delete {
+  width: 30px;
+  height: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: #DD4A48;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 /* Адаптация */
 
@@ -274,6 +338,29 @@ span {
 
   .header {
     font-size: 25px;
+  }
+
+  .cart-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caer-img {
+    width: 100%;
+  }
+
+  .cart-item {
+    margin-left: 0px;
+  }
+  
+  .cart-name {
+    width: 200px;
+    margin-left: 30px;
+  }
+  
+  .cart-count {
+    width: 180px;
   }
 }
 
@@ -387,4 +474,30 @@ span {
     margin: -10px;
   }
 
+  .cart-name {
+    width: 110px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  
+  .cart-count {
+    width: 90px;
+    font-size: 15px;
+  }
+  
+  .delete, .add-remove {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .cart-count {
+    margin-left: 10px;
+  }
+
+  .icon-product {
+    width: 30px;
+    height: 30px;
+  }
 }

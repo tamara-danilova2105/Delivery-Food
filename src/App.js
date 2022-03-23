@@ -10,9 +10,36 @@ import logo from './photo/logo.png'
 import Discounts from './Discounts';
 import Recipes from './Recipes';
 import Contacts from './Contacts';
+import Cart from './Cart';
+import { useState } from "react"
+import { data } from './data'
 
 
 function App() {
+
+  const [product, setProduct] = useState(data)
+
+  const chosenFood = (category) => {
+    const newFoodArray = data.filter(item => item.category === category)
+    setProduct(newFoodArray)
+}
+
+  const [cart, setCart] = useState([])
+
+  const addToCart = (id) => {
+      if (!cart.find( element => element.id === id)){
+          let temp = [...cart];
+      
+          product.forEach( item=> {
+              if (item.id === id ) {
+              const clikedProduct = {...item};
+              temp.push(clikedProduct)
+              }
+          })
+          setCart(temp);
+          }
+  }
+
   return (
     <Router>
     <nav className='navbar'>
@@ -20,14 +47,15 @@ function App() {
       <Link to='/discounts' className='delivery'>АКЦИИ</Link>
       <Link to='/recipes' className='delivery'>РЕЦЕПТЫ</Link>
       <Link to='/contacts' className='delivery'>КОНТАКТЫ</Link>
-      <button className='btnBasket'>КОРЗИНА</button>
+      <Link to='/cart' className='btnBasket'>КОРЗИНА</Link>
     </nav>
 
     <Routes>
-      <Route path='/' element={ <HomePage/> }></Route>
+      <Route path='/' element={ <HomePage product={product} addToCart={addToCart} chosenFood={chosenFood}/>}></Route>
       <Route path='/discounts' element={ <Discounts/> }></Route>
       <Route path='/recipes' element={ <Recipes /> }></Route>
       <Route path='/contacts' element={ <Contacts/> }></Route>
+      <Route path='/cart' element={ <Cart cart={cart} setCart={setCart} /> }></Route>
     </Routes>
     </Router>
   );
