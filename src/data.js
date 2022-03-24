@@ -33,7 +33,8 @@ export const data = [
         photo: classic,
         nameDish: 'Классическая пицца',
         description: 'Колбаса варёная, сыр Гауда, маринованные огурчики, свежие помидоры на фирменном соусе.',
-        price: 300
+        price: 300,
+        totalPrice: 300,
     },
 
     {
@@ -44,7 +45,8 @@ export const data = [
         photo: mexican,
         nameDish: 'Мексиканская пицца',
         description: 'Колбаса Пепперони, помидоры, перец, морковь по-корейски, сыр Гауда на фирменном соусе.',
-        price: 350
+        price: 350,
+        totalPrice: 350,
     },
 
     {
@@ -55,7 +57,8 @@ export const data = [
         photo: margaret,
         nameDish: 'Пицца Mаргарита',
         description: 'Помидоры, сыр Гауда и Моцарелла, базилик на фирменном соусе с травами.',
-        price: 250
+        price: 250,
+        totalPrice: 250,
     },
 
 
@@ -67,7 +70,8 @@ export const data = [
         photo: chef,
         nameDish: 'Пицца от шефа',
         description: 'Бекон, язык, цыплёнок, шампиньоны, болгарский перец, сыр Моцарелла на чесночном соусе.',
-        price: 500
+        price: 500,
+        totalPrice: 500,
     },
 
     {
@@ -78,7 +82,8 @@ export const data = [
         photo: hawaiian,
         nameDish: 'Гавайская пицца',
         description: 'Ветчина, бекон и ананасы с сырами Гауда и Моцарелла на фирменном соусе.',
-        price: 400
+        price: 400,
+        totalPrice: 400,
     },
 
     {
@@ -89,7 +94,8 @@ export const data = [
         photo: pepperoni,
         nameDish: 'пицца Пепперони',
         description: 'Баварские колбаски, бекон, перец Пепперони, огурцы и помидоры, сыр Гауда на фирменном соусе.',
-        price: 500
+        price: 500,
+        totalPrice: 500,
     },
 
     {
@@ -100,7 +106,8 @@ export const data = [
         photo: friedPotatoes,
         nameDish: 'Картофель по-деревенски',
         description: 'Обжаренные до золотистой корочки долики молодого картофеля с травами.',
-        price: 120
+        price: 120,
+        totalPrice: 120,
     },
 
     {
@@ -111,7 +118,8 @@ export const data = [
         photo: frenchFries,
         nameDish: 'Картофель фри',
         description: 'Хрустящий, обжаренный до золотистой корочки молодой картофель.',
-        price: 100
+        price: 100,
+        totalPrice: 100,
     },
 
     {
@@ -122,7 +130,8 @@ export const data = [
         photo: wings,
         nameDish: 'Крылышки',
         description: 'Куриных крылышка в пикатной панировке. Хит продаж',
-        price: 150
+        price: 150,
+        totalPrice: 150,
     },
 
     {
@@ -133,7 +142,8 @@ export const data = [
         photo: greekSalad,
         nameDish: 'Греческий салат',
         description: 'Хрустящий салат айсберг, сочные томаты черри, маслины, свежий огурец, кубики брынзы и бальзамик.',
-        price: 180
+        price: 180,
+        totalPrice: 180,
     },
 
     {
@@ -144,7 +154,8 @@ export const data = [
         photo: сaesarSalad,
         nameDish: 'Салат Цезарь',
         description: 'Сочный цыпленок, хрустящий салат айсберг, томаты черри, сыры чеддер и пармезан, гренки, соус цезарь.',
-        price: 200
+        price: 200,
+        totalPrice: 200,
     },
 
     {
@@ -155,7 +166,8 @@ export const data = [
         photo: tomatoSoup,
         nameDish: 'Томатный суп',
         description: 'Пюре из натуральных томатов, куриный бульон, сыр Моцарелла, свежая зелень.',
-        price: 150
+        price: 150,
+        totalPrice: 150,
     },
 
     {
@@ -166,7 +178,8 @@ export const data = [
         photo: donut,
         nameDish: 'Пончик',
         description: 'Пончик с начинкой из кубиков молочного бельгийского шоколада, с посыпкой из фисташки.',
-        price: 100
+        price: 100,
+        totalPrice: 100,
     },
 
     {
@@ -177,7 +190,8 @@ export const data = [
         photo: cheesecake,
         nameDish: 'Чизкейк с вишней',
         description: 'Песочное тесто, нежнейший творожный чизкейк и сочные ягоды.',
-        price: 150
+        price: 150,
+        totalPrice: 150,
     },
 
     {
@@ -188,7 +202,8 @@ export const data = [
         photo: muffin,
         nameDish: 'Маффин',
         description: 'Маффин с начинкой из сезонных ягод с кубиками белого бельгийского шоколада.',
-        price: 100
+        price: 100,
+        totalPrice: 100,
     },
 
     {
@@ -199,7 +214,8 @@ export const data = [
         photo: cappuccino,
         nameDish: 'Кофе Капучино',
         description: 'Ароматный кофе Капучино с молоком идеально к десертам.',
-        price: 100
+        price: 100,
+        totalPrice: 100,
     },
 
     {
@@ -210,7 +226,8 @@ export const data = [
         photo: cola,
         nameDish: 'Coca Cola',
         description: 'Классическая Coca Cola 0.5л - прекрасно утоляет жажду.',
-        price: 100
+        price: 100,
+        totalPrice: 100,
     },
 
     {
@@ -221,6 +238,7 @@ export const data = [
         photo: juice,
         nameDish: 'Свежевыжатый сок',
         description: 'Свежевыжатый соки в ассортименте - яблоки, апельсины, ананас, грейпфрут.',
-        price: 200
+        price: 200,
+        totalPrice: 200,
     },
 ]

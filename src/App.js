@@ -47,7 +47,7 @@ function App() {
       <Link to='/discounts' className='delivery'>АКЦИИ</Link>
       <Link to='/recipes' className='delivery'>РЕЦЕПТЫ</Link>
       <Link to='/contacts' className='delivery'>КОНТАКТЫ</Link>
-      <Link to='/cart' className='btnBasket'>КОРЗИНА</Link>
+      <Link to='/cart' className='btnBasket sizeBasket'>КОРЗИНА</Link>
     </nav>
 
     <Routes>

@@ -12,7 +12,7 @@ function Product({product, addToCart}) {
                         </div>
                         <div className='price-info'>
                             <p className='price'>{price} ₽</p>
-                            <button onClick={() => addToCart(id)} className='btnBasket margin'>в корзину</button>
+                            <button onClick={() => addToCart(id)} className='btnBasket margin'>заказать</button>
                         </div>
                     </div>
                 )
