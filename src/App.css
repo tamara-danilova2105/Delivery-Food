@@ -84,6 +84,10 @@ body {
     text-align: center;
 }
 
+.btnBasket:hover{
+  background-color: #DD4A48;
+}
+
 .sizeBasket {
   font-size: 30px;
   padding: 5px 10px;
@@ -447,19 +451,22 @@ hr {
   
   .delivery {
     font-size: 15px;
-    margin-left: 8px;
+    margin-left: 7px;
   }
 
   .btnBasket {
-    width: 100px;
+    width: 110px;
     height: 30px;
     font-size: 22px;
     margin-left: 40px;
   }
 
+
+
   .sizeBasket {
     font-size: 20px;
   }
+
 
   .price {
     font-size: 20px;

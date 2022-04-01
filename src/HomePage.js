@@ -3,8 +3,7 @@ import slides_one from './photo/slides_one.jfif'
 import Delivery from './Delivery'
 import Product from './Product'
 
-function HomePage({product, addToCart, chosenFood}) {
-    
+function HomePage({ product, addToCart, chosenFood, cart }) {
     return(
         <div>
             <div className='bannerHomePage'>
@@ -13,7 +12,7 @@ function HomePage({product, addToCart, chosenFood}) {
 
             <div>
                 <Button chosenFood={chosenFood}/>
-                <Product product={product} addToCart={addToCart}/>
+                <Product product={product} addToCart={addToCart} cart={cart} />
                 <Delivery/>
             </div>
         </div>

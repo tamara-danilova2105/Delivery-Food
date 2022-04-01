@@ -1,8 +1,9 @@
-function Product({product, addToCart}) {
+function Product({ product, addToCart }) {
+
     return(
         <div className='container'>
             {product.map(item => {
-                const {id, photo, nameDish, description, price} = item
+                const { id, photo, nameDish, description, price} = item
                 return(
                     <div key={id} className='product'>
                         <div className='product-info'>

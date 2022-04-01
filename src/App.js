@@ -27,17 +27,17 @@ function App() {
   const [cart, setCart] = useState([])
 
   const addToCart = (id) => {
-      if (!cart.find( element => element.id === id)){
-          let temp = [...cart];
-      
-          product.forEach( item=> {
-              if (item.id === id ) {
-              const clikedProduct = {...item};
-              temp.push(clikedProduct)
-              }
-          })
-          setCart(temp);
-          }
+    if (!cart.find( item => item.id === id)){
+      let cartArray = [...cart];
+  
+      product.forEach( item=> {
+        if (item.id === id ) {
+        const clikedProduct = {...item};
+        cartArray.push(clikedProduct)
+        }
+      })
+      setCart(cartArray);
+      }
   }
 
   return (
@@ -51,7 +51,7 @@ function App() {
     </nav>
 
     <Routes>
-      <Route path='/' element={ <HomePage product={product} addToCart={addToCart} chosenFood={chosenFood}/>}></Route>
+      <Route path='/' element={ <HomePage product={product} addToCart={addToCart} chosenFood={chosenFood} cart={cart}/>}></Route>
       <Route path='/discounts' element={ <Discounts/> }></Route>
       <Route path='/recipes' element={ <Recipes /> }></Route>
       <Route path='/contacts' element={ <Contacts/> }></Route>
